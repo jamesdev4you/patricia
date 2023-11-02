@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'KaushanScript';
+  src: local('KaushanScript'),
+    url(./fonts/KaushanScriptRegular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'KatibehRegular';
+  src: local('KatibehRegular'),
+    url(./fonts/KatibehRegular.ttf) format('truetype');
+}
