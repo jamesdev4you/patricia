@@ -1,11 +1,11 @@
 a.nav_link:hover {
   cursor: pointer;
-  color: #2e5984;
+  color: #d4a373;
 }
 
 .nav_link {
   text-decoration: none;
-  color: white;
+  color: #bb7a39;
 }
 
 .menu_link {

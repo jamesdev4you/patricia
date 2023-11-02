@@ -5,7 +5,7 @@ import {
   responsiveFontSizes,
 } from '@mui/material/styles';
 import './index.css';
-import Typography from '@mui/material/Typography';
+import Footer from './pageComponents/Footer/footer';
 import Menu from './pageComponents/Menu/menu';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pageComponents/Home/home';
@@ -81,6 +81,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   );
 }
