@@ -6,6 +6,9 @@ import {
 } from '@mui/material/styles';
 import './index.css';
 import Typography from '@mui/material/Typography';
+import Menu from './pageComponents/Menu/menu';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pageComponents/Home/home';
 
 let theme = createTheme({
   palette: {
@@ -22,6 +25,7 @@ let theme = createTheme({
   typography: {
     h1: {
       fontFamily: 'KaushanScript',
+      fontSize: '134px',
     },
     h2: {
       fontFamily: 'KaushanScript',
@@ -55,7 +59,7 @@ let theme = createTheme({
 
 theme = responsiveFontSizes(theme, {
   breakpoints: ['xs', 'sm', 'md', 'lg', 'xl'],
-  factor: 2,
+  factor: 8,
   variants: [
     'h1',
     'h2',
@@ -73,9 +77,10 @@ theme = responsiveFontSizes(theme, {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div>
-        <Typography variant='h3'>YO</Typography>
-      </div>
+      <Menu />
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
     </ThemeProvider>
   );
 }
