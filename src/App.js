@@ -9,6 +9,7 @@ import Footer from './pageComponents/Footer/footer';
 import Menu from './pageComponents/Menu/menu';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pageComponents/Home/home';
+import Contact from './pageComponents/Contact/contact';
 
 let theme = createTheme({
   palette: {
@@ -80,6 +81,7 @@ function App() {
       <Menu />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </ThemeProvider>

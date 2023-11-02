@@ -47,7 +47,9 @@ const LightOptionsButton = (props) => (
       border: (theme) => `3px solid ${theme.palette.secondary.main}`,
       boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
     }}
-    href='/contact'
+    onClick={() => {
+      props.onClick();
+    }}
   >
     <Typography variant='h4' sx={{ marginBottom: '10px' }}>
       {props.title}

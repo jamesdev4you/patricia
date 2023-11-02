@@ -131,7 +131,7 @@ const HomeTestimonial = () => {
                   }}
                 >
                   <Typography
-                    variant='h4'
+                    variant='h3'
                     sx={{
                       color: (theme) => `${theme.palette.secondary.main}`,
                       width: '100%',
