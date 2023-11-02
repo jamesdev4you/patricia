@@ -89,10 +89,10 @@ const HomeHeader = () => {
           >
             <Box
               sx={{
-                height: '200px',
-                width: '200px',
+                height: '230px',
+                width: '230px',
                 borderRadius: '50%',
-                border: (theme) => `3px solid ${theme.palette.secondary.main}`,
+                border: (theme) => `5px solid ${theme.palette.secondary.main}`,
                 backgroundImage: `url(${item.pic})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'none',
