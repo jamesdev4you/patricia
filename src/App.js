@@ -10,6 +10,7 @@ import Menu from './pageComponents/Menu/menu';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pageComponents/Home/home';
 import Contact from './pageComponents/Contact/contact';
+import RealEstate from './pageComponents/RealEstate/realEstate';
 
 let theme = createTheme({
   palette: {
@@ -82,6 +83,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/realestate' element={<RealEstate />} />
       </Routes>
       <Footer />
     </ThemeProvider>
