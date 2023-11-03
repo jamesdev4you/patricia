@@ -57,7 +57,7 @@ const Elderly = () => {
           className='Text--Elderly'
           sx={{
             width: '60%',
-            height: '100%',
+            height: '75%',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -83,10 +83,7 @@ const Elderly = () => {
             The largest database of free icons for any project. The largest
             database of free icons for any project. The largest database of free
             icons for any project. The largest database of free icons for any
-            project. The largest database of free icons for any project.The
-            largest database of free icons for any project. The largest database
-            of free icons for any project. The largest database of free icons
-            for any project.
+            project. The largest database of free icons for any project.
           </Typography>
           <LightOptionsButton title={'Book Today!'} />
         </Box>
@@ -102,6 +99,7 @@ const Elderly = () => {
             border: `3px solid #bb7a39`,
             borderRadius: '15px',
             marginTop: '1em',
+            boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
           }}
         ></Box>
       </Box>
