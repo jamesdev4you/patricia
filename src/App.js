@@ -11,6 +11,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pageComponents/Home/home';
 import Contact from './pageComponents/Contact/contact';
 import RealEstate from './pageComponents/RealEstate/realEstate';
+import Podcast from './pageComponents/Podcast/podcast';
+import Book from './pageComponents/Book/book';
 
 let theme = createTheme({
   palette: {
@@ -84,6 +86,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/realestate' element={<RealEstate />} />
+        <Route path='/podcast' element={<Podcast />} />
+        <Route path='/book' element={<Book />} />
       </Routes>
       <Footer />
     </ThemeProvider>
