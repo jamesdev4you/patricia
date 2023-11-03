@@ -39,7 +39,7 @@ const ContactHeader = () => {
           backgroundSize: 'cover',
           backgroundRepeat: 'none',
           backgroundPosition: 'center',
-          border: (theme) => `3px solid ${theme.palette.secondary.main}`,
+          border: '3px solid #bb7a39',
           borderRadius: '25px',
           boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
         }}
@@ -58,7 +58,7 @@ const ContactHeader = () => {
         <Typography
           variant='h1'
           sx={{
-            color: (theme) => `${theme.palette.secondary.main}`,
+            color: '#bb7a39',
             width: '100%',
             textAlign: 'center',
             lineHeight: '.6em',

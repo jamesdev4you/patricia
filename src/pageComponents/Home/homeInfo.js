@@ -117,19 +117,16 @@ const HomeInfo = () => {
                   sm: '100px',
                   xs: '100px',
                 },
-                color: (theme) => `${theme.palette.secondary.main}`,
+                color: '#BB7A39',
               }}
             />
-            <Typography
-              variant='h3'
-              sx={{ color: (theme) => `${theme.palette.secondary.main}` }}
-            >
+            <Typography variant='h3' sx={{ color: '#BB7A39' }}>
               {item.title}
             </Typography>
             <Typography
               variant='h5'
               sx={{
-                color: (theme) => `${theme.palette.secondary.main}`,
+                color: '#BB7A39',
                 width: '90%',
                 marginBottom: '1em',
               }}
@@ -139,7 +136,7 @@ const HomeInfo = () => {
             <Typography
               variant='h6'
               sx={{
-                color: (theme) => `${theme.palette.secondary.main}`,
+                color: '#BB7A39',
                 width: '90%',
                 marginBottom: '2em',
               }}

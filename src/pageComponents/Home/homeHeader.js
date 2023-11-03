@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Woman from '../../assets/woman.jpg';
 import RealEstate from '../../assets/realEstate.jpg';
 import Podcast from '../../assets/podcast.jpg';
@@ -8,21 +8,25 @@ import Typography from '@mui/material/Typography';
 
 const headerOptions = [
   {
+    id: 1,
     title: 'Contact',
     desc: 'The largest database of free icons for any project.',
     pic: Woman,
   },
   {
+    id: 2,
     title: 'Real Estate',
     desc: 'The largest database of free icons for any project.',
     pic: RealEstate,
   },
   {
+    id: 3,
     title: 'Podcast',
     desc: 'The largest database of free icons for any project.',
     pic: Podcast,
   },
   {
+    id: 4,
     title: 'Book',
     desc: 'The largest database of free icons for any project.',
     pic: Book,
@@ -30,6 +34,9 @@ const headerOptions = [
 ];
 
 const HomeHeader = () => {
+  const [state, setState] = useState(0);
+  console.log(state);
+
   return (
     <Box
       sx={{
@@ -50,7 +57,7 @@ const HomeHeader = () => {
         <Typography
           variant='h1'
           sx={{
-            color: (theme) => `${theme.palette.secondary.main}`,
+            color: '#BB7A39',
             paddingBottom: '.1em',
           }}
         >
@@ -59,7 +66,7 @@ const HomeHeader = () => {
         <Typography
           variant='h2'
           sx={{
-            color: (theme) => `${theme.palette.secondary.main}`,
+            color: '#BB7A39',
           }}
         >
           With Patrica Simone
@@ -69,6 +76,7 @@ const HomeHeader = () => {
         className='Options--Header'
         sx={{
           width: '85%',
+          height: '40vh',
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
@@ -86,29 +94,47 @@ const HomeHeader = () => {
               width: '17%',
               textAlign: 'center',
             }}
+            onMouseEnter={() => setState(item.id)}
+            onMouseLeave={() => setState(0)}
           >
             <Box
               sx={{
-                height: '230px',
-                width: '230px',
+                height: state === item.id ? '250px' : '230px',
+                width: state === item.id ? '250px' : '230px',
                 borderRadius: '50%',
-                border: (theme) => `5px solid ${theme.palette.secondary.main}`,
+                border: (theme) =>
+                  state === item.id
+                    ? `5px solid #BB7A39`
+                    : `5px solid ${theme.palette.secondary.main}`,
                 backgroundImage: `url(${item.pic})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'none',
                 backgroundPosition: 'center',
                 boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+                cursor: 'pointer',
               }}
             />
             <Typography
               variant='h3'
-              sx={{ color: (theme) => `${theme.palette.secondary.main}` }}
+              sx={{
+                cursor: 'pointer',
+                color: (theme) =>
+                  state === item.id
+                    ? '#BB7A39'
+                    : `${theme.palette.secondary.main}`,
+              }}
             >
               {item.title}
             </Typography>
             <Typography
               variant='h5'
-              sx={{ color: (theme) => `${theme.palette.secondary.main}` }}
+              sx={{
+                cursor: 'pointer',
+                color: (theme) =>
+                  state === item.id
+                    ? '#BB7A39'
+                    : `${theme.palette.secondary.main}`,
+              }}
             >
               {item.desc}
             </Typography>

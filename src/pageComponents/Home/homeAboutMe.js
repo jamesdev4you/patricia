@@ -26,7 +26,7 @@ const HomeAboutMe = () => {
         <Typography
           variant='h1'
           sx={{
-            color: (theme) => `${theme.palette.secondary.main}`,
+            color: '#BB7A39',
             paddingBottom: '.1em',
           }}
         >
@@ -35,7 +35,7 @@ const HomeAboutMe = () => {
         <Typography
           variant='h2'
           sx={{
-            color: (theme) => `${theme.palette.secondary.main}`,
+            color: '#BB7A39',
           }}
         >
           And you can too!

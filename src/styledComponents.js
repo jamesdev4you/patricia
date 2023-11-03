@@ -8,20 +8,20 @@ const DarkOptionsButton = (props) => (
       paddingBottom: '5px',
       width: '160px',
       height: '40px',
-      backgroundColor: (theme) => `${theme.palette.secondary.main}`,
+      backgroundColor: '#BB7A39',
       color: (theme) => `${theme.palette.primary.main}`,
       '&:hover': {
-        backgroundColor: '#bb7a39',
+        backgroundColor: '#c88949',
         fontWeight: 'bold',
-        border: (theme) => `1px solid ${theme.palette.secondary.main}`,
+        border: '#BB7A39',
       },
       borderRadius: '25px',
-      border: (theme) => `1px solid ${theme.palette.primary.main}`,
+      border: (theme) => `2px solid ${theme.palette.secondary.main}`,
       boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
     }}
     href='/contact'
   >
-    <Typography variant='h5' sx={{ marginBottom: '5px' }}>
+    <Typography variant='h5' sx={{ marginBottom: '7px' }}>
       {props.title}
     </Typography>
   </Button>
@@ -36,15 +36,15 @@ const LightOptionsButton = (props) => (
       width: 'auto',
       height: '50px',
       backgroundColor: '#FAEDCD',
-      color: '#D4A373',
+      color: '#bb7a39',
       '&:hover': {
-        color: '#bb7a39',
+        color: '#D4A373',
         backgroundColor: '#FAEDCD',
-        border: '2px solid #bb7a39',
+        border: (theme) => `2px solid ${theme.palette.secondary.main}`,
         fontWeight: 'bold',
       },
       borderRadius: '25px',
-      border: (theme) => `3px solid ${theme.palette.secondary.main}`,
+      border: '3px solid #bb7a39',
       boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
     }}
     onClick={() => {

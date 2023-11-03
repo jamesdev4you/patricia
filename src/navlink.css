@@ -10,17 +10,13 @@ a.nav_link:hover {
 
 .menu_link {
   text-decoration: none;
-  color: #d4a373;
+  color: #bb7a39;
   font-size: 40px;
   margin-left: 48px;
   text-align: left;
 }
 
-.menu_link:hover {
-  color: #bb7a39;
-}
-
 a.menu_link:hover {
   cursor: pointer;
-  color: #bb7a39;
+  color: #d4a373;
 }
