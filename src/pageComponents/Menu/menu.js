@@ -35,21 +35,21 @@ export default function NavBar(props) {
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{ textAlign: 'center', backgroundColor: 'black' }}
+      sx={{ textAlign: 'center', backgroundColor: '#FEFAE0' }}
     >
       <img src={Logo} alt='yooo' style={{ height: '150px', width: '150px' }} />
       <Divider sx={{ backgroundColor: 'white' }} />
-      <List sx={{ backgroundColor: 'black' }}>
+      <List sx={{ backgroundColor: '#FEFAE0' }}>
         {navItems.map((item) => (
           <ListItem
             key={item.text}
-            sx={{ margin: '15px 0px', backgroundColor: 'black' }}
+            sx={{ margin: '15px 0px', backgroundColor: '#FEFAE0' }}
             disablePadding
           >
             <NavLink
               style={{
                 textDecoration: 'none',
-                color: 'white',
+                color: 'black',
                 fontFamily: 'Ubuntu',
                 fontSize: '20px',
                 margin: 'auto',
@@ -79,10 +79,10 @@ export default function NavBar(props) {
             sx={{
               mr: 2,
               display: { sm: 'block', md: 'none' },
-              backgroundColor: 'black',
+              backgroundColor: '#FEFAE0',
             }}
           >
-            <MenuIcon sx={{ color: 'white' }} />
+            <MenuIcon sx={{ color: 'black' }} />
           </IconButton>
           <Box
             alt='yooo'
@@ -112,6 +112,7 @@ export default function NavBar(props) {
               marginLeft: 'auto',
               paddingBottom: '15px',
               marginRight: '15px',
+              backgroundColor: '#FEFAE0',
             }}
           >
             {navItems.map((item) => (
@@ -119,7 +120,7 @@ export default function NavBar(props) {
                 className='menu_link'
                 style={{
                   textTransform: 'none',
-                  color: (theme) => `${theme.palette.secondary.main}`,
+                  backgroundColor: '#FEFAE0',
                 }}
                 to={item.href}
               >
@@ -130,7 +131,7 @@ export default function NavBar(props) {
         </Toolbar>
       </AppBar>
 
-      <Box component='nav' sx={{ backgroundColor: 'black' }}>
+      <Box component='nav' sx={{ backgroundColor: '#FEFAE0' }}>
         <Drawer
           variant='temporary'
           open={mobileOpen}
@@ -143,7 +144,7 @@ export default function NavBar(props) {
             '& .MuiDrawer-paper': {
               boxSizing: 'border-box',
               width: drawerWidth,
-              backgroundColor: 'black',
+              backgroundColor: '#FEFAE0',
             },
           }}
         >

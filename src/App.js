@@ -88,6 +88,7 @@ function App() {
         <Route path='/realestate' element={<RealEstate />} />
         <Route path='/podcast' element={<Podcast />} />
         <Route path='/book' element={<Book />} />
+        <Route path='*' element={<Home />} />
       </Routes>
       <Footer />
     </ThemeProvider>
