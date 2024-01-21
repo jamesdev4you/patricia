@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5cd458d6.css",
+    "main.js": "/static/js/main.6c8bc753.js",
+    "static/media/woman.jpg": "/static/media/woman.785854c7ba37a31b03d2.jpg",
+    "static/media/podcast.jpg": "/static/media/podcast.9e20314fdaee22435c63.jpg",
+    "static/media/realEstate.jpg": "/static/media/realEstate.5ca66b2ae78e282967a9.jpg",
+    "static/media/book.jpg": "/static/media/book.7e71e6d6aebb872b97d4.jpg",
+    "static/media/KaushanScriptRegular.ttf": "/static/media/KaushanScriptRegular.a668b3d996f7c50fb3fe.ttf",
+    "static/media/KatibehRegular.ttf": "/static/media/KatibehRegular.e820daaf3ec8dbe37888.ttf",
+    "static/media/instagram.png": "/static/media/instagram.ed071077fc911932f21a.png",
+    "static/media/logo.png": "/static/media/logo.fcaeee13bbec6679d280.png",
+    "static/media/facebook.png": "/static/media/facebook.65062c0e6678602327eb.png",
+    "static/media/twitter.png": "/static/media/twitter.3a655e8ba8a9efd824c5.png",
+    "static/media/podcast.svg": "/static/media/podcast.3ee6da79ed2611cd7caad8a3a7413d47.svg",
+    "static/media/phone.svg": "/static/media/phone.3a8148f9722bf80cd6d9e5b8ed812aa2.svg",
+    "static/media/realEstate.svg": "/static/media/realEstate.8032f985151b278e0b889d80bda2db99.svg",
+    "static/media/book.svg": "/static/media/book.df484026ddd02a2ab2125684ebcfcf28.svg",
+    "index.html": "/index.html",
+    "main.5cd458d6.css.map": "/static/css/main.5cd458d6.css.map",
+    "main.6c8bc753.js.map": "/static/js/main.6c8bc753.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5cd458d6.css",
+    "static/js/main.6c8bc753.js"
+  ]
+}
