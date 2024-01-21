@@ -40,7 +40,7 @@ const HomeHeader = () => {
   return (
     <Box
       sx={{
-        height: '90vh',
+        height: { xl: '90vh', lg: '90vh', md: '90vh', sm: 'auto', xs: 'auto' },
         width: '100%',
         backgroundColor: (theme) => `${theme.palette.primary.main}`,
         display: 'flex',
@@ -48,6 +48,14 @@ const HomeHeader = () => {
         justifyContent: 'center',
         flexDirection: 'column',
         gap: '2em',
+        paddingTop: { xl: '0px', lg: '0px', md: '0px', sm: '4em', xs: '6em' },
+        paddingBottom: {
+          xl: '0px',
+          lg: '0px',
+          md: '0px',
+          sm: '4em',
+          xs: '6em',
+        },
       }}
     >
       <Box
@@ -75,13 +83,19 @@ const HomeHeader = () => {
       <Box
         className='Options--Header'
         sx={{
-          width: '85%',
-          height: '40vh',
+          width: { xl: '85%', lg: '85%', md: '95%', sm: '95%', xs: '95%' },
+          height: 'auto',
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: {
+            xl: 'row',
+            lg: 'row',
+            md: 'row',
+            sm: 'column',
+            xs: 'column',
+          },
           alignItems: 'center',
           justifyContent: 'center',
-          gap: '3em',
+          gap: { xl: '2em', lg: '4em', md: '3em', sm: '2em', xs: '1em' },
         }}
       >
         {headerOptions.map((item) => (
@@ -91,7 +105,7 @@ const HomeHeader = () => {
               alignItems: 'center',
               justifyContent: 'center',
               flexDirection: 'column',
-              width: '17%',
+              width: { xl: '17%', lg: '17%', md: '17%', sm: '50%', xs: '50%' },
               textAlign: 'center',
             }}
             onMouseEnter={() => setState(item.id)}
@@ -99,8 +113,20 @@ const HomeHeader = () => {
           >
             <Box
               sx={{
-                height: state === item.id ? '250px' : '230px',
-                width: state === item.id ? '250px' : '230px',
+                height: {
+                  xl: state === item.id ? '250px' : '230px',
+                  lg: state === item.id ? '250px' : '230px',
+                  md: state === item.id ? '200px' : '180px',
+                  sm: state === item.id ? '200px' : '180px',
+                  xs: state === item.id ? '150px' : '120px',
+                },
+                width: {
+                  xl: state === item.id ? '250px' : '230px',
+                  lg: state === item.id ? '250px' : '230px',
+                  md: state === item.id ? '200px' : '180px',
+                  sm: state === item.id ? '200px' : '180px',
+                  xs: state === item.id ? '150px' : '120px',
+                },
                 borderRadius: '50%',
                 border: (theme) =>
                   state === item.id

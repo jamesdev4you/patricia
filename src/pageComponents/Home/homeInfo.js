@@ -40,7 +40,7 @@ const HomeInfo = () => {
     <Box
       sx={{
         width: '100%',
-        height: '90vh',
+        height: { xl: '90vh', lg: '90vh', md: '90vh', sm: 'auto', xs: 'auto' },
         backgroundColor: (theme) => `${theme.palette.secondary.main}`,
         display: 'flex',
         alignItems: 'center',
@@ -48,6 +48,13 @@ const HomeInfo = () => {
         paddingTop: '3em',
         flexDirection: 'column',
         gap: '2em',
+        paddingBottom: {
+          xl: '0px',
+          lg: '0px',
+          md: '0px',
+          sm: '4em',
+          xs: '6em',
+        },
       }}
     >
       <Box
@@ -77,7 +84,13 @@ const HomeInfo = () => {
         sx={{
           width: '85%',
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: {
+            xl: 'row',
+            lg: 'row',
+            md: 'row',
+            sm: 'column',
+            xs: 'column',
+          },
           alignItems: 'center',
           justifyContent: 'center',
           gap: '2em',
@@ -91,7 +104,7 @@ const HomeInfo = () => {
               justifyContent: 'start',
               flexDirection: 'column',
               paddingTop: '2em',
-              width: '17%',
+              width: { xl: '17%', lg: '17%', md: '17%', sm: '50%', xs: '75%' },
               height: '50vh',
               textAlign: 'center',
               borderRadius: '15px',

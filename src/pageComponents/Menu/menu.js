@@ -14,6 +14,7 @@ import Logo from '../../assets/logo.png';
 import '../../navlink.css';
 import '../../index.css';
 import { Outlet } from 'react-router-dom';
+import { LightPhoneButton } from '../../styledComponents';
 
 const drawerWidth = 240;
 const navItems = [
@@ -104,6 +105,7 @@ export default function NavBar(props) {
               backgroundPosition: 'center',
             }}
           />
+
           <Box
             sx={{
               display: { xs: 'none', sm: 'none', md: 'block' },
@@ -127,6 +129,7 @@ export default function NavBar(props) {
           </Box>
         </Toolbar>
       </AppBar>
+
       <Box component='nav' sx={{ backgroundColor: 'black' }}>
         <Drawer
           variant='temporary'

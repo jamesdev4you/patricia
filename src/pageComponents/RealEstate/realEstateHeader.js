@@ -22,7 +22,7 @@ const RealEstateHeader = () => {
         paddingTop: '100px',
       }}
     >
-      <Box
+      <Box 
         sx={{
           width: '250px',
           height: '250px',

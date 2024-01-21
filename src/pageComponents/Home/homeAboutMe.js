@@ -9,12 +9,19 @@ const HomeAboutMe = () => {
     <Box
       sx={{
         width: '100%',
-        height: '95vh',
+        height: { xl: '90vh', lg: '90vh', md: '90vh', sm: 'auto', xs: 'auto' },
         backgroundColor: (theme) => `${theme.palette.primary.main}`,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'start',
-        paddingTop: '1em',
+        paddingTop: { xl: '1em', lg: '1em', md: '1em', sm: '2em', xs: '2em' },
+        paddingBottom: {
+          xl: '1em',
+          lg: '1em',
+          md: '1em',
+          sm: '2em',
+          xs: '2em',
+        },
         flexDirection: 'column',
         gap: '2em',
       }}
@@ -46,7 +53,13 @@ const HomeAboutMe = () => {
         sx={{
           width: '85%',
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: {
+            xl: 'row',
+            lg: 'row',
+            md: 'row',
+            sm: 'column-reverse',
+            xs: 'column-reverse',
+          },
           alignItems: 'center',
           justifyContent: 'center',
           gap: '2em',
@@ -55,10 +68,17 @@ const HomeAboutMe = () => {
         <Box
           className='Text--HomeAboutMe'
           sx={{
-            width: '60%',
+            width: {
+              xl: '60%',
+              lg: '60%',
+              md: '60%',
+              sm: '90%',
+              xs: '90%',
+            },
             height: '100%',
             display: 'flex',
             flexDirection: 'column',
+
             alignItems: 'center',
             justifyContent: 'start',
             gap: '.6em',
@@ -94,7 +114,13 @@ const HomeAboutMe = () => {
         <Box
           className='pic--HomeAboutMe'
           sx={{
-            width: '20vw',
+            width: {
+              xl: '20vw',
+              lg: '20vw',
+              md: '20vw',
+              sm: '90%',
+              xs: '90%',
+            },
             height: '60vh',
             backgroundImage: `url(${Woman})`,
             backgroundSize: 'cover',

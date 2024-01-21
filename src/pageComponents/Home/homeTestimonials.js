@@ -91,8 +91,20 @@ const HomeTestimonial = () => {
             {testimonialOptions.map((item) => (
               <Box
                 sx={{
-                  width: '35vw',
-                  height: '60vh',
+                  width: {
+                    xl: '35vw',
+                    lg: '35vw',
+                    md: '35vw',
+                    sm: '90%',
+                    xs: '90%',
+                  },
+                  height: {
+                    xl: '60vh',
+                    lg: '60vh',
+                    md: '60vh',
+                    sm: '90vh',
+                    xs: '60vh',
+                  },
                   backgroundColor: (theme) => `${theme.palette.primary.main}`,
                   display: 'flex',
                   flexDirection: 'column',
@@ -107,8 +119,20 @@ const HomeTestimonial = () => {
               >
                 <Box
                   sx={{
-                    width: '300px',
-                    height: '300px',
+                    width: {
+                      xl: '300px',
+                      lg: '300px',
+                      md: '300px',
+                      sm: '150px',
+                      xs: '150px',
+                    },
+                    height: {
+                      xl: '300px',
+                      lg: '300px',
+                      md: '300px',
+                      sm: '150px',
+                      xs: '150px',
+                    },
                     backgroundImage: `url(${item.pic})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'none',
