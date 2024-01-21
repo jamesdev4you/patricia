@@ -8,15 +8,16 @@ const Divorced = () => {
   return (
     <Box
       sx={{
-        width: '100%',
-        height: '90vh',
+        width: '100vw',
+        height: { xl: '90vh', lg: 'auto', md: 'auto', sm: 'auto', xs: 'auto' },
         backgroundColor: (theme) => `${theme.palette.secondary.main}`,
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'start',
+        justifyContent: 'center',
         paddingTop: '3em',
         flexDirection: 'column',
         gap: '2em',
+        paddingBottom: '1em',
       }}
     >
       <Box
@@ -47,17 +48,41 @@ const Divorced = () => {
           display: 'flex',
           alignItems: 'start',
           justifyContent: 'center',
-          flexDirection: 'row',
+          flexDirection: {
+            xl: 'row',
+            lg: 'row',
+            md: 'column',
+            sm: 'column',
+            xs: 'column',
+          },
           width: '85%',
-          height: '60vh',
+          height: {
+            xl: '60vh',
+            lg: 'auto',
+            md: 'auto',
+            sm: 'auto',
+            xs: 'auto',
+          },
           gap: '2em',
         }}
       >
         <Box
           className='Pic--Divorced'
           sx={{
-            width: '40%',
-            height: '75%',
+            width: {
+              xl: '40%',
+              lg: '90%',
+              md: '90%',
+              sm: '100%',
+              xs: '100%',
+            },
+            height: {
+              xl: '400px',
+              lg: '400px',
+              md: '400px',
+              sm: '300px',
+              xs: '300px',
+            },
             backgroundImage: `url(${RealEstatePic})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'none',
@@ -71,7 +96,13 @@ const Divorced = () => {
         <Box
           className='Text--Divorced'
           sx={{
-            width: '60%',
+            width: {
+              xl: '60%',
+              lg: '90%',
+              md: '100%',
+              sm: '100%',
+              xs: '100%',
+            },
             height: '75%',
             display: 'flex',
             flexDirection: 'column',
@@ -85,7 +116,7 @@ const Divorced = () => {
             sx={{
               color: (theme) => `${theme.palette.primary.main}`,
               width: '100%',
-              textAlign: 'left',
+              textAlign: 'center',
             }}
           >
             The largest database of free icons for any project. The largest

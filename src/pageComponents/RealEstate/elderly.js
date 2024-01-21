@@ -9,7 +9,7 @@ const Elderly = () => {
     <Box
       sx={{
         width: '100%',
-        height: '90vh',
+        height: { xl: '90vh', lg: 'auto', md: 'auto', sm: 'auto', xs: 'auto' },
         backgroundColor: (theme) => `${theme.palette.primary.main}`,
         display: 'flex',
         alignItems: 'center',
@@ -17,6 +17,7 @@ const Elderly = () => {
         paddingTop: '3em',
         flexDirection: 'column',
         gap: '2em',
+        paddingBottom: '1em',
       }}
     >
       <Box
@@ -47,16 +48,34 @@ const Elderly = () => {
           display: 'flex',
           alignItems: 'start',
           justifyContent: 'center',
-          flexDirection: 'row',
+          flexDirection: {
+            xl: 'row',
+            lg: 'row',
+            md: 'column',
+            sm: 'column',
+            xs: 'column',
+          },
           width: '85%',
-          height: '60vh',
+          height: {
+            xl: '60vh',
+            lg: 'auto',
+            md: 'auto',
+            sm: 'auto',
+            xs: 'auto',
+          },
           gap: '2em',
         }}
       >
         <Box
           className='Text--Elderly'
           sx={{
-            width: '60%',
+            width: {
+              xl: '60%',
+              lg: '90%',
+              md: '100%',
+              sm: '100%',
+              xs: '100%',
+            },
             height: '75%',
             display: 'flex',
             flexDirection: 'column',
@@ -70,7 +89,7 @@ const Elderly = () => {
             sx={{
               color: (theme) => `${theme.palette.secondary.main}`,
               width: '100%',
-              textAlign: 'left',
+              textAlign: 'center',
             }}
           >
             The largest database of free icons for any project. The largest
@@ -90,8 +109,20 @@ const Elderly = () => {
         <Box
           className='Pic--elderly'
           sx={{
-            width: '40%',
-            height: '75%',
+            width: {
+              xl: '40%',
+              lg: '90%',
+              md: '100%',
+              sm: '100%',
+              xs: '100%',
+            },
+            height: {
+              xl: '400px',
+              lg: '400px',
+              md: '400px',
+              sm: '300px',
+              xs: '300px',
+            },
             backgroundImage: `url(${RealEstatePic})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'none',

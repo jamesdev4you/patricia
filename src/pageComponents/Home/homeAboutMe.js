@@ -9,7 +9,13 @@ const HomeAboutMe = () => {
     <Box
       sx={{
         width: '100%',
-        height: { xl: '90vh', lg: '90vh', md: '90vh', sm: 'auto', xs: 'auto' },
+        height: {
+          xl: '100vh',
+          lg: '100vh',
+          md: '100vh',
+          sm: 'auto',
+          xs: 'auto',
+        },
         backgroundColor: (theme) => `${theme.palette.primary.main}`,
         display: 'flex',
         alignItems: 'center',

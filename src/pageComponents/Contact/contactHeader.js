@@ -19,20 +19,45 @@ const ContactHeader = () => {
   return (
     <Box
       sx={{
-        height: '90vh',
+        height: { xl: '90vh', lg: 'auto', md: 'auto', sm: 'auto', xs: 'auto' },
         width: '100%',
         backgroundColor: (theme) => `${theme.palette.primary.main}`,
         display: 'flex',
-        alignItems: 'end',
-        flexDirection: 'row',
+        alignItems: {
+          xl: 'end',
+          lg: 'center',
+          md: 'center',
+          sm: 'center',
+          xs: 'center',
+        },
+        flexDirection: {
+          xl: 'row',
+          lg: 'column',
+          md: 'column',
+          sm: 'column',
+          xs: 'column',
+        },
         justifyContent: 'center',
         gap: '2em',
-        paddingTop: '4em',
+        paddingTop: {
+          xl: '2em',
+          lg: '10em',
+          md: '10em',
+          sm: '10em',
+          xs: '10em',
+        },
         paddingBottom: '4em',
       }}
     >
       <Box
         sx={{
+          display: {
+            xl: 'flex',
+            lg: 'none',
+            md: 'none',
+            sm: 'none',
+            xs: 'none',
+          },
           width: '27vw',
           height: '70vh',
           backgroundImage: `url(${Woman})`,
@@ -47,7 +72,13 @@ const ContactHeader = () => {
       <Box
         className='TypographyButtons--Contact'
         sx={{
-          width: '55%',
+          width: {
+            xl: '55%',
+            lg: '80%',
+            md: '70%',
+            sm: '90%',
+            xs: '90%',
+          },
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -81,30 +112,32 @@ const ContactHeader = () => {
             display: 'flex',
             alignItems: 'center',
             flexDirection: 'row',
+            flexWrap: 'wrap',
             justifyContent: 'center',
+
             gap: '3em',
           }}
         >
           <LightOptionsButton
-            title={'Who I Am!'}
+            title={'Me!'}
             onClick={() => {
               setState(0);
             }}
           />
           <LightOptionsButton
-            title={'Real Estate!'}
+            title={'Houses!'}
             onClick={() => {
               setState(1);
             }}
           />
           <LightOptionsButton
-            title={'My Book!'}
+            title={'Book!'}
             onClick={() => {
               setState(2);
             }}
           />
           <LightOptionsButton
-            title={'My Podcast!'}
+            title={'Podcast!'}
             onClick={() => {
               setState(3);
             }}

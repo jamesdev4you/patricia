@@ -13,7 +13,13 @@ const ContactSection = () => {
     <Box
       sx={{
         width: '100%',
-        height: '100vh',
+        height: {
+          xl: '100vh',
+          lg: '100vh',
+          md: 'auto',
+          sm: 'auto',
+          xs: 'auto',
+        },
         backgroundColor: (theme) => `${theme.palette.secondary.main}`,
         display: 'flex',
         alignItems: 'center',
@@ -47,7 +53,13 @@ const ContactSection = () => {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          flexDirection: 'row',
+          flexDirection: {
+            xl: 'row',
+            lg: 'row',
+            md: 'column',
+            sm: 'column',
+            xs: 'column',
+          },
           gap: '2em',
         }}
       >

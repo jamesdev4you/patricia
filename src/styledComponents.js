@@ -34,7 +34,7 @@ const LightOptionsButton = (props) => (
     sx={{
       margin: 'auto',
       paddingLeft: '15px',
-      width: 'auto',
+      minWidth: '150px',
       height: '50px',
       backgroundColor: '#FAEDCD',
       color: '#bb7a39',
@@ -66,6 +66,7 @@ const LightPhoneButton = (props) => (
       margin: 'auto',
       paddingLeft: '15px',
       width: 'auto',
+
       height: '50px',
       backgroundColor: '#FAEDCD',
       color: '#bb7a39',

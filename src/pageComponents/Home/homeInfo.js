@@ -104,7 +104,7 @@ const HomeInfo = () => {
               justifyContent: 'start',
               flexDirection: 'column',
               paddingTop: '2em',
-              width: { xl: '17%', lg: '17%', md: '17%', sm: '50%', xs: '75%' },
+              width: { xl: '20%', lg: '25%', md: '25%', sm: '50%', xs: '75%' },
               height: '50vh',
               textAlign: 'center',
               borderRadius: '15px',
