@@ -62,18 +62,32 @@ const HomeInfo = () => {
         sx={{ width: '85%', textAlign: 'center' }}
       >
         <Typography
-          variant='h1'
           sx={{
             color: (theme) => `${theme.palette.primary.main}`,
             paddingBottom: '.1em',
+            fontSize: {
+              xl: '140px',
+              lg: '100px',
+              md: '80px',
+              sm: '44px',
+              xs: '35px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           Enjoying What's Next
         </Typography>
         <Typography
-          variant='h2'
           sx={{
             color: (theme) => `${theme.palette.primary.main}`,
+            fontSize: {
+              xl: '60px',
+              lg: '50px',
+              md: '60px',
+              sm: '34px',
+              xs: '28px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           Find Your Way Forward

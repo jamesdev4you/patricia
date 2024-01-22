@@ -16,11 +16,11 @@ const Podcast = () => {
         justifyContent: 'center',
         flexDirection: 'column',
         gap: '2em',
-        paddingTop: { xl: '0px', lg: '0px', md: '0px', sm: '4em', xs: '6em' },
+        paddingTop: { xl: '7em', lg: '7em', md: '7em', sm: '7em', xs: '6em' },
         paddingBottom: {
-          xl: '0px',
-          lg: '0px',
-          md: '0px',
+          xl: '20px',
+          lg: '20px',
+          md: '20px',
           sm: '4em',
           xs: '6em',
         },
@@ -122,7 +122,7 @@ const Podcast = () => {
             sx={{
               color: (theme) => `${theme.palette.primary.main}`,
               width: '100%',
-              textAlign: 'center',
+              textAlign: 'left',
             }}
           >
             The largest database of free icons for any project. The largest

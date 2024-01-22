@@ -22,7 +22,7 @@ const RealEstateHeader = () => {
         paddingTop: '100px',
       }}
     >
-      <Box 
+      <Box
         sx={{
           width: '250px',
           height: '250px',
@@ -36,9 +36,16 @@ const RealEstateHeader = () => {
         }}
       />
       <Typography
-        variant='h1'
         sx={{
           color: (theme) => `${theme.palette.primary.main}`,
+          fontSize: {
+            xl: '100px',
+            lg: '100px',
+            md: '80px',
+            sm: '44px',
+            xs: '34px',
+          },
+          fontFamily: 'KaushanScript',
         }}
       >
         Real Estate Made Easy

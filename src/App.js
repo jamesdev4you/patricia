@@ -29,7 +29,6 @@ let theme = createTheme({
   typography: {
     h1: {
       fontFamily: 'KaushanScript',
-      fontSize: '134px',
     },
     h2: {
       fontFamily: 'KaushanScript',

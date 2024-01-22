@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Woman from '../../assets/woman.jpg';
-import { LightOptionsButton } from '../../styledComponents.js';
+import { DarkOptionsButton } from '../../styledComponents.js';
 
 const HomeAboutMe = () => {
   return (
@@ -37,10 +37,17 @@ const HomeAboutMe = () => {
         sx={{ width: '85%', textAlign: 'center' }}
       >
         <Typography
-          variant='h1'
           sx={{
             color: '#BB7A39',
             paddingBottom: '.1em',
+            fontSize: {
+              xl: '140px',
+              lg: '100px',
+              md: '80px',
+              sm: '44px',
+              xs: '32px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           I found happiness & bliss
@@ -115,7 +122,7 @@ const HomeAboutMe = () => {
             The largest database of free icons for any project. The largest
             database of free icons for any project.
           </Typography>
-          <LightOptionsButton title={'Get in Touch'} />
+          <DarkOptionsButton title={'Get in Touch'} />
         </Box>
         <Box
           className='pic--HomeAboutMe'

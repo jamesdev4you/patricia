@@ -17,7 +17,7 @@ const Divorced = () => {
         paddingTop: '3em',
         flexDirection: 'column',
         gap: '2em',
-        paddingBottom: '1em',
+        paddingBottom: '3em',
       }}
     >
       <Box
@@ -25,18 +25,32 @@ const Divorced = () => {
         sx={{ width: '85%', textAlign: 'center' }}
       >
         <Typography
-          variant='h1'
           sx={{
             color: (theme) => `${theme.palette.primary.main}`,
             paddingBottom: '.1em',
+            fontSize: {
+              xl: '140px',
+              lg: '100px',
+              md: '80px',
+              sm: '44px',
+              xs: '35px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           Enjoying What's Next
         </Typography>
         <Typography
-          variant='h2'
           sx={{
             color: (theme) => `${theme.palette.primary.main}`,
+            fontSize: {
+              xl: '60px',
+              lg: '50px',
+              md: '60px',
+              sm: '34px',
+              xs: '28px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           Find Your Way Forward
@@ -51,9 +65,9 @@ const Divorced = () => {
           flexDirection: {
             xl: 'row',
             lg: 'row',
-            md: 'column',
-            sm: 'column',
-            xs: 'column',
+            md: 'column-reverse',
+            sm: 'column-reverse',
+            xs: 'column-reverse',
           },
           width: '85%',
           height: {
@@ -116,7 +130,7 @@ const Divorced = () => {
             sx={{
               color: (theme) => `${theme.palette.primary.main}`,
               width: '100%',
-              textAlign: 'center',
+              textAlign: 'left',
             }}
           >
             The largest database of free icons for any project. The largest

@@ -6,8 +6,8 @@ const DarkOptionsButton = (props) => (
   <Button
     variant='contained'
     sx={{
-      paddingBottom: '5px',
-      width: '160px',
+      padding: '15px',
+      minWidth: '150px',
       height: '40px',
       backgroundColor: '#BB7A39',
       color: (theme) => `${theme.palette.primary.main}`,
@@ -19,12 +19,18 @@ const DarkOptionsButton = (props) => (
       borderRadius: '25px',
       border: (theme) => `2px solid ${theme.palette.secondary.main}`,
       boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+      fontSize: {
+        xl: '16px',
+        lg: '16px',
+        md: '16px',
+        sm: '12px',
+        xs: '12px',
+      },
+      fontWeight: 'bold',
     }}
     href='/contact'
   >
-    <Typography variant='h5' sx={{ marginBottom: '7px' }}>
-      {props.title}
-    </Typography>
+    {props.title}
   </Button>
 );
 
@@ -32,10 +38,10 @@ const LightOptionsButton = (props) => (
   <Button
     variant='contained'
     sx={{
-      margin: 'auto',
-      paddingLeft: '15px',
+      padding: '15px',
       minWidth: '150px',
-      height: '50px',
+      marginRight: 'auto',
+      height: '35px',
       backgroundColor: '#FAEDCD',
       color: '#bb7a39',
       '&:hover': {
@@ -44,24 +50,30 @@ const LightOptionsButton = (props) => (
         border: (theme) => `2px solid ${theme.palette.secondary.main}`,
         fontWeight: 'bold',
       },
-      borderRadius: '25px',
-      border: '3px solid #bb7a39',
+      borderRadius: '20px',
+      border: '2px solid #bb7a39',
       boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+
+      fontSize: {
+        xl: '16px',
+        lg: '16px',
+        md: '16px',
+        sm: '12px',
+        xs: '12px',
+      },
+      fontWeight: 'bold',
     }}
     onClick={() => {
       props.onClick();
     }}
   >
-    <Typography variant='h4' sx={{ marginBottom: '10px' }}>
-      {props.title}
-    </Typography>
+    {props.title}
   </Button>
 );
 
 const LightPhoneButton = (props) => (
   <Button
     variant='contained'
-    oncli
     sx={{
       margin: 'auto',
       paddingLeft: '15px',
@@ -76,15 +88,15 @@ const LightPhoneButton = (props) => (
         border: (theme) => `2px solid ${theme.palette.secondary.main}`,
         fontWeight: 'bold',
       },
+      fontSize: '20px',
+      fontWeight: 'bold',
       borderRadius: '25px',
       border: '3px solid #bb7a39',
       boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
     }}
   >
     <Link href='tel:14159423491' sx={{ textTransform: 'none' }}>
-      <Typography variant='h4' sx={{ marginBottom: '10px' }}>
-        Call Now
-      </Typography>
+      Call Now
     </Link>
   </Button>
 );

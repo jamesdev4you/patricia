@@ -17,7 +17,7 @@ const Elderly = () => {
         paddingTop: '3em',
         flexDirection: 'column',
         gap: '2em',
-        paddingBottom: '1em',
+        paddingBottom: '3em',
       }}
     >
       <Box
@@ -25,18 +25,32 @@ const Elderly = () => {
         sx={{ width: '85%', textAlign: 'center' }}
       >
         <Typography
-          variant='h1'
           sx={{
             color: '#bb7a39',
             paddingBottom: '.1em',
+            fontSize: {
+              xl: '140px',
+              lg: '100px',
+              md: '80px',
+              sm: '44px',
+              xs: '35px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           Enjoying What's Next
         </Typography>
         <Typography
-          variant='h2'
           sx={{
             color: '#bb7a39',
+            fontSize: {
+              xl: '60px',
+              lg: '50px',
+              md: '60px',
+              sm: '34px',
+              xs: '28px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           Find Your Way Forward
@@ -89,7 +103,7 @@ const Elderly = () => {
             sx={{
               color: (theme) => `${theme.palette.secondary.main}`,
               width: '100%',
-              textAlign: 'center',
+              textAlign: 'left',
             }}
           >
             The largest database of free icons for any project. The largest

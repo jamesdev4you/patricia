@@ -63,18 +63,32 @@ const HomeHeader = () => {
         sx={{ width: '85%', textAlign: 'center' }}
       >
         <Typography
-          variant='h1'
           sx={{
             color: '#BB7A39',
             paddingBottom: '.1em',
+            fontSize: {
+              xl: '140px',
+              lg: '100px',
+              md: '80px',
+              sm: '44px',
+              xs: '35px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           Finding Your True Self
         </Typography>
         <Typography
-          variant='h2'
           sx={{
             color: '#BB7A39',
+            fontSize: {
+              xl: '60px',
+              lg: '50px',
+              md: '60px',
+              sm: '34px',
+              xs: '28px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           With Patrica Simone
@@ -84,7 +98,13 @@ const HomeHeader = () => {
         className='Options--Header'
         sx={{
           width: { xl: '85%', lg: '85%', md: '95%', sm: '95%', xs: '95%' },
-          height: 'auto',
+          height: {
+            xl: '40vh',
+            lg: '40vh',
+            md: '40vh',
+            sm: 'auto',
+            xs: 'auto',
+          },
           display: 'flex',
           flexDirection: {
             xl: 'row',

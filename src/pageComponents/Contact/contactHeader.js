@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Woman from '../../assets/woman.jpg';
-import { LightOptionsButton } from '../../styledComponents';
+import { DarkOptionsButton } from '../../styledComponents';
 
 const headerOptions = [
   'A largest database of free icons for any project. The largest The largest database of free icons for any project. The largest The largest database of free icons for any project. The largest The largest database of free icons for any project. The largest The largest database of free icons for any project. The largest The largest database of free icons for any project. The largest The largest database of free icons for any project. The largest The largest database of free icons for any project. The largestThe largest database of free icons for any project. The largest The largest database of free icons for any project. The largestThe largest database of free icons for any project. The largestThe largest database of free icons for any project. The largest The largest database of free icons for any project. The largest The largest ',
@@ -87,12 +87,19 @@ const ContactHeader = () => {
         }}
       >
         <Typography
-          variant='h1'
           sx={{
             color: '#bb7a39',
             width: '100%',
             textAlign: 'center',
             lineHeight: '.6em',
+            fontSize: {
+              xl: '140px',
+              lg: '100px',
+              md: '80px',
+              sm: '44px',
+              xs: '64px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           About Me!
@@ -118,25 +125,25 @@ const ContactHeader = () => {
             gap: '3em',
           }}
         >
-          <LightOptionsButton
+          <DarkOptionsButton
             title={'Me!'}
             onClick={() => {
               setState(0);
             }}
           />
-          <LightOptionsButton
+          <DarkOptionsButton
             title={'Houses!'}
             onClick={() => {
               setState(1);
             }}
           />
-          <LightOptionsButton
+          <DarkOptionsButton
             title={'Book!'}
             onClick={() => {
               setState(2);
             }}
           />
-          <LightOptionsButton
+          <DarkOptionsButton
             title={'Podcast!'}
             onClick={() => {
               setState(3);

@@ -14,7 +14,6 @@ import Logo from '../../assets/logo.png';
 import '../../navlink.css';
 import '../../index.css';
 import { Outlet } from 'react-router-dom';
-import { LightPhoneButton } from '../../styledComponents';
 
 const drawerWidth = 240;
 const navItems = [
@@ -43,14 +42,17 @@ export default function NavBar(props) {
         {navItems.map((item) => (
           <ListItem
             key={item.text}
-            sx={{ margin: '15px 0px', backgroundColor: '#FEFAE0' }}
+            sx={{
+              margin: '15px 0px',
+              backgroundColor: '#FEFAE0',
+            }}
             disablePadding
           >
             <NavLink
               style={{
                 textDecoration: 'none',
-                color: 'black',
-                fontFamily: 'Ubuntu',
+                color: '#BB7A39',
+                fontFamily: 'KaushanScript',
                 fontSize: '20px',
                 margin: 'auto',
               }}
@@ -82,7 +84,7 @@ export default function NavBar(props) {
               backgroundColor: '#FEFAE0',
             }}
           >
-            <MenuIcon sx={{ color: 'black' }} />
+            <MenuIcon sx={{ color: '#BB7A39' }} />
           </IconButton>
           <Box
             alt='yooo'

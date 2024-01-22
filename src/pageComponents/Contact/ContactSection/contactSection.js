@@ -37,10 +37,17 @@ const ContactSection = () => {
         }}
       >
         <Typography
-          variant='h1'
           sx={{
             color: (theme) => `${theme.palette.primary.main}`,
             paddingBottom: '.1em',
+            fontSize: {
+              xl: '100px',
+              lg: '80px',
+              md: '70px',
+              sm: '44px',
+              xs: '35px',
+            },
+            fontFamily: 'KaushanScript',
           }}
         >
           Contact me today
@@ -110,12 +117,11 @@ const ContactSection = () => {
               sm: '100%',
               xs: '100%',
             },
-            marginBottom: '50px',
           }}
         >
           <Box
             sx={{
-              height: '200px',
+              height: '180px',
               width: '100%',
               borderBottom: '1px solid #E4DCC0',
             }}
@@ -171,8 +177,9 @@ const ContactSection = () => {
           >
             <Box
               sx={{
-                height: '170px',
+                height: '150px',
                 width: '100%',
+
                 borderBottom: {
                   xl: 'none',
                   lg: 'none',
@@ -221,6 +228,13 @@ const ContactSection = () => {
                 sx={{
                   color: (theme) => `${theme.palette.primary.main}`,
                   fontStyle: 'italic',
+                  paddingTop: {
+                    xl: '0px',
+                    lg: '0px',
+                    md: '0px',
+                    sm: '30px',
+                    xs: '30px',
+                  },
                 }}
               >
                 Email
