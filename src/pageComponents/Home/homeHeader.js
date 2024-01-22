@@ -138,14 +138,14 @@ const HomeHeader = () => {
                   lg: state === item.id ? '250px' : '230px',
                   md: state === item.id ? '200px' : '180px',
                   sm: state === item.id ? '200px' : '180px',
-                  xs: state === item.id ? '150px' : '120px',
+                  xs: state === item.id ? '200px' : '180px',
                 },
                 width: {
                   xl: state === item.id ? '250px' : '230px',
                   lg: state === item.id ? '250px' : '230px',
                   md: state === item.id ? '200px' : '180px',
                   sm: state === item.id ? '200px' : '180px',
-                  xs: state === item.id ? '150px' : '120px',
+                  xs: state === item.id ? '200px' : '180px',
                 },
                 borderRadius: '50%',
                 border: (theme) =>

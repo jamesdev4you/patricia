@@ -117,7 +117,7 @@ const HomeTestimonial = () => {
                     lg: '60vh',
                     md: '60vh',
                     sm: '70vh',
-                    xs: '60vh',
+                    xs: '65vh',
                   },
                   backgroundColor: (theme) => `${theme.palette.primary.main}`,
                   display: 'flex',

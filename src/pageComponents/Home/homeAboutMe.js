@@ -92,7 +92,7 @@ const HomeAboutMe = () => {
             display: 'flex',
             flexDirection: 'column',
 
-            alignItems: 'center',
+            alignItems: 'start',
             justifyContent: 'start',
             gap: '.6em',
           }}

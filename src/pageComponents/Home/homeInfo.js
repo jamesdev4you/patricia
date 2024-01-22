@@ -118,8 +118,14 @@ const HomeInfo = () => {
               justifyContent: 'start',
               flexDirection: 'column',
               paddingTop: '2em',
-              width: { xl: '20%', lg: '25%', md: '25%', sm: '50%', xs: '75%' },
-              height: '50vh',
+              width: { xl: '20%', lg: '30%', md: '30%', sm: '50%', xs: '75%' },
+              height: {
+                xl: '50vh',
+                lg: '50vh',
+                md: '50vh',
+                sm: '450px',
+                xs: '450px',
+              },
               textAlign: 'center',
               borderRadius: '15px',
               backgroundColor: (theme) => `${theme.palette.primary.main}`,
@@ -147,7 +153,18 @@ const HomeInfo = () => {
                 color: '#BB7A39',
               }}
             />
-            <Typography variant='h3' sx={{ color: '#BB7A39' }}>
+            <Typography
+              sx={{
+                fontSize: {
+                  xl: '40px',
+                  lg: '40px',
+                  md: '40px',
+                  sm: '34px',
+                  xs: '28px',
+                },
+                color: '#BB7A39',
+              }}
+            >
               {item.title}
             </Typography>
             <Typography
