@@ -168,8 +168,14 @@ const HomeInfo = () => {
               {item.title}
             </Typography>
             <Typography
-              variant='h5'
               sx={{
+                fontSize: {
+                  xl: '32px',
+                  lg: '32px',
+                  md: '32px',
+                  sm: '30px',
+                  xs: '24px',
+                },
                 color: '#BB7A39',
                 width: '90%',
                 marginBottom: '1em',
