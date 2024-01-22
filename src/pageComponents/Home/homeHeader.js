@@ -164,6 +164,13 @@ const HomeHeader = () => {
               variant='h3'
               sx={{
                 cursor: 'pointer',
+                paddingTop: {
+                  xl: '0px',
+                  lg: '0px',
+                  md: '0px',
+                  sm: '15px',
+                  xs: '15px',
+                },
                 color: (theme) =>
                   state === item.id
                     ? '#BB7A39'

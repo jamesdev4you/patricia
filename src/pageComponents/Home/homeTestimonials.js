@@ -152,6 +152,13 @@ const HomeTestimonial = () => {
                     backgroundRepeat: 'none',
                     backgroundPosition: 'center',
                     borderRadius: '100%',
+                    marginBottom: {
+                      xl: '0px',
+                      lg: '0px',
+                      md: '0px',
+                      sm: '15px',
+                      xs: '15px',
+                    },
                     border: '3px solid #bb7a39',
                     boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
                   }}
